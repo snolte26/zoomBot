@@ -9,3 +9,24 @@ I plan to put that in when next semester rolls around
 
 The bot asks which class I need to be in, then logs me into canvas, and 
 navigates to the correct zoom class
+
+`````````````````````````````````````````````````````````````````````````````````````````````
+
+Update 11/26/2020:
+-revised to add .txt processing
+-now checks users day of week and time
+  compares user day of week and time 
+  with .txt info
+-Added initial setup
+  initial setup creates new 
+  .txt with class info from user
+
+When user first runs the bot, it checkks if classes.txt exists in its directory
+If not, it creates a new classes.txt and asks for the name, day of week, 
+  start time, and zoom url for each class
+If classes.txt exists, the bot iterates through the file lookking for matching
+  day of week and start time of users computer
+When it finds matching day and time, it takkes the url in the next line and opens 
+  the zoom link as well as canvas.instructure
+
+`````````````````````````````````````````````````````````````````````````````````````````````
