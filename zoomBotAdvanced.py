@@ -83,13 +83,22 @@ def openClass(classLists):
 
     # this is where my major aneurysm was
 
-    currentDT = datetime.datetime.now()
-    for word in classLists:
-        if currentDT.strftime("%A %H:%M" + "\n") == word:
-            canvasLogin()
-            time.sleep(10)
-            url = (next(classLists))
-            openZoom(url)
+    found = False
+
+    while True:
+        currentDT = datetime.datetime.now()
+
+        for word in classLists:
+            if currentDT.strftime("%A %H:%M" + "\n") == word:
+                # start opening the zoom link
+                canvasLogin()
+                time.sleep(10)
+                url = (next(classLists))
+                openZoom(url)
+                # end opening the zoom link
+                found = True
+        if found:
+            break
 
 
 # ``````````````````````````````````````````````````````````````````````````````
