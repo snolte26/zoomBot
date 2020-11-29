@@ -30,3 +30,12 @@ When it finds matching day and time, it takkes the url in the next line and open
   the zoom link as well as canvas.instructure
 
 `````````````````````````````````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````````````````````````
+
+Update 11/29/2020:
+-Updated openClass() function
+
+openClass() now updates the current day and time, then rechecks the .txt again until the 
+  a matching class is found to open
+
+`````````````````````````````````````````````````````````````````````````````````````````````
