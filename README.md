@@ -39,3 +39,15 @@ openClass() now updates the current day and time, then rechecks the .txt again u
   a matching class is found to open
 
 `````````````````````````````````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````````````````````````
+
+Update 11/30/2020:
+-Canvas page no longer hard coded
+-User now inputs their canvase home page during initial setup
+
+Before, the canvas page was hard coded, with no way to change it, so it always went to IU
+Now, the user can input their own canvas page during the setup. The bot then checks the .txt
+  for the canvas link (looks for the key word "instructure"), then sends the link to the 
+  canvasLogin() function
+  
+`````````````````````````````````````````````````````````````````````````````````````````````
