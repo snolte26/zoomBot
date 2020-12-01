@@ -10,6 +10,8 @@ I plan to put that in when next semester rolls around
 The bot asks which class I need to be in, then logs me into canvas, and 
 navigates to the correct zoom class
 
+For your own use, download the zoomBotAdvanced.py
+
 `````````````````````````````````````````````````````````````````````````````````````````````
 
 Update 11/26/2020:
