@@ -51,3 +51,13 @@ Now, the user can input their own canvas page during the setup. The bot then che
   canvasLogin() function
   
 `````````````````````````````````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````````````````````````
+
+Update 12/1/2020:
+-Added username/password support
+-Bot no longer assumes user/pass is saved and autofilled
+
+Before, the bot would assume the browser saved the user/pass, so it would just click autofill
+Now the user specifies a username and password in setup, then the bot types them when opening canvas
+
+`````````````````````````````````````````````````````````````````````````````````````````````
