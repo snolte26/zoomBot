@@ -91,7 +91,7 @@ def openClass(classLists):
     found = False
     
         for word in classLists:
-        if "://" in word:
+        if "instructure" in word:
             word = word.replace("\n", "")
             canvasLogin(word)
 
