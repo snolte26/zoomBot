@@ -16,6 +16,10 @@ def canvasLogin(school, username, password):
 
     pyautogui.typewrite(password)
     pyautogui.press("enter")
+    
+    pyautogui.moveTo(935, 437, duration=5)
+    pyautogui.click()
+    time.sleep(5)
 
 
 def openZoom(link):
