@@ -4,9 +4,9 @@ import pyautogui
 import time
 
 
-def canvasLogin():
+def canvasLogin(school):
     # opens browser to go through login process
-    url = "https://iu.instructure.com/"
+    url = school
 
     webbrowser.open_new(url)
     time.sleep(10)
@@ -53,6 +53,11 @@ def setup():
     classes = open("classes.txt", "w+")
     print("Beginning initial setup")
     print()
+    
+    school = input("Enter Canvas link"
+                   "(i.e. https://iu.instructure.com/): ") + "\n"
+    classes.writelines(school)
+    classes.writelines("\n")
 
     amount = int(input("How many classes: "))
     for i in range(amount):
@@ -84,6 +89,11 @@ def openClass(classLists):
     # this is where my major aneurysm was
 
     found = False
+    
+        for word in classLists:
+        if "://" in word:
+            word = word.replace("\n", "")
+            canvasLogin(word)
 
     while True:
         currentDT = datetime.datetime.now()
@@ -91,7 +101,6 @@ def openClass(classLists):
         for word in classLists:
             if currentDT.strftime("%A %H:%M" + "\n") == word:
                 # start opening the zoom link
-                canvasLogin()
                 time.sleep(10)
                 url = (next(classLists))
                 openZoom(url)
