@@ -65,3 +65,18 @@ Before, the bot would assume the browser saved the user/pass, so it would just c
 Now the user specifies a username and password in setup, then the bot types them when opening canvas
 
 `````````````````````````````````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````````````````````````
+
+Update 01/07/2021:
+
+-Tweaked canvasLogin() function for duo verification
+-Added clarification for setup()
+
+Previously, the bot relied on the user being in full screen mode and having the same screen dimensions
+as the creator. Now the bot tabs over to the button and presses enter, more accessable to users
+Also added more clarification for the setup so users kknow what the bot looks for when checking day and time
+
+
+
+
+
