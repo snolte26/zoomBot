@@ -72,8 +72,8 @@ def setup():
     amount = int(input("How many classes: "))
     for i in range(amount):
         className = input("Name of Class: ") + "\n"
-        classDay = input("Day of Week: ")
-        classStart = input("Start Time (24 hr): ")
+        classDay = input("Day of Week (i.e. Sunday): ")
+        classStart = input("Start Time (24 hr i.e. 13:30): ")
         classDayTime = classDay + " " + classStart + "\n"
         classURL = input("URL: ") + "\n"
         classes.writelines(className)
