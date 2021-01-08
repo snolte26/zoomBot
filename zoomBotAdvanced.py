@@ -17,8 +17,9 @@ def canvasLogin(school, username, password):
     pyautogui.typewrite(password)
     pyautogui.press("enter")
     
-    pyautogui.moveTo(935, 437, duration=5)
-    pyautogui.click()
+    pyautogui.press("tab")
+    pyautogui.press("tab")
+    pyautogui.press("enter")
     time.sleep(5)
 
 
