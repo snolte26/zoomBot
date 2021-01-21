@@ -76,7 +76,13 @@ Previously, the bot relied on the user being in full screen mode and having the 
 as the creator. Now the bot tabs over to the button and presses enter, more accessable to users
 Also added more clarification for the setup so users kknow what the bot looks for when checking day and time
 
+`````````````````````````````````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````````````````````````
+Update 01/21/2021:
+-openZoom() no longer moves to preprogrammed coordinates
 
+Previously when opening zoom, the openZoom() functionwould go to preprogrammed coordinates.
+Now the function detirmines user screen size, calculates the desired position, and moves there.
 
 
 
