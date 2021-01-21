@@ -27,11 +27,12 @@ def openZoom(link):
     # opening the zoom link
     new = 2
     autoraise = True
+    x, y = pyautogui.size()
 
     webbrowser.open(link, new, autoraise)
     time.sleep(5)
     pyautogui.press("enter")
-    pyautogui.moveTo(935, 507, duration=10)
+    pyautogui.moveTo(x/2, y/2, duration=10)
     pyautogui.click()
 
 
