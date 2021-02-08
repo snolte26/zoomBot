@@ -20,7 +20,7 @@ def canvasLogin(school, username, password, schoolZoom):
     pyautogui.press("tab")
     pyautogui.press("tab")
     pyautogui.press("enter")
-    time.sleep(5)
+    time.sleep(10)
     
     webbrowser.open_new(schoolZoom)
     time.sleep(10)
@@ -30,7 +30,7 @@ def canvasLogin(school, username, password, schoolZoom):
 
     pyautogui.typewrite(password)
     pyautogui.press("enter")
-    time.sleep(5)
+    time.sleep(10)
 
 
 def openZoom(link):
