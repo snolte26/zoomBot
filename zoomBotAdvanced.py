@@ -4,7 +4,7 @@ import pyautogui
 import time
 
 
-def canvasLogin(school, username, password):
+def canvasLogin(school, username, password, schoolZoom):
     # opens browser to go through login process
     url = school
 
@@ -19,6 +19,16 @@ def canvasLogin(school, username, password):
     
     pyautogui.press("tab")
     pyautogui.press("tab")
+    pyautogui.press("enter")
+    time.sleep(5)
+    
+    webbrowser.open_new(schoolZoom)
+    time.sleep(10)
+
+    pyautogui.typewrite(username)
+    pyautogui.press("tab")
+
+    pyautogui.typewrite(password)
     pyautogui.press("enter")
     time.sleep(5)
 
@@ -62,11 +72,13 @@ def setup():
     school = input("Enter Canvas link"
                    "(i.e. https://iu.instructure.com/): ") + "\n"
     classes.writelines(school)
+    schoolZoom = input("Enter School Zoom login: ") + "\n"
 
     username = input("Enter Username: ") + "\n"
     password = input("Enter Password: ") + "\n"
     classes.writelines(username)
     classes.writelines(password)
+    classes.writelines(schoolZoom)
 
     classes.writelines("\n")
 
@@ -110,8 +122,11 @@ def openClass(classLists):
 
             passw = (next(classLists))
             passw = passw.replace("\n", "")
+            
+            schZoom = (next(classLists))
+            schZoom = schZoom.replace("\n", "")
 
-            canvasLogin(word, user, passw)
+            canvasLogin(word, user, passw, schZoom)
 
     while True:
         currentDT = datetime.datetime.now()
