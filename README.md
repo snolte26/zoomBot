@@ -72,7 +72,7 @@ Also added more clarification for the setup so users kknow what the bot looks fo
 Update 01/21/2021:
 -openZoom() no longer moves to preprogrammed coordinates
 
-Previously when opening zoom, the openZoom() functionwould go to preprogrammed coordinates.
+Previously when opening zoom, the openZoom() function would go to preprogrammed coordinates.
 Now the function detirmines user screen size, calculates the desired position, and moves there.
 
 
