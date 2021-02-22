@@ -113,7 +113,10 @@ def openClass(classLists):
 
     found = False
     
-    for word in classLists:
+    while True:
+        currentDT = datetime.datetime.now()
+        
+        for word in classLists:
         if "instructure" in word:
             word = word.replace("\n", "")
 
@@ -127,9 +130,6 @@ def openClass(classLists):
             schZoom = schZoom.replace("\n", "")
 
             canvasLogin(word, user, passw, schZoom)
-
-    while True:
-        currentDT = datetime.datetime.now()
 
         for word in classLists:
             if currentDT.strftime("%A %H:%M" + "\n") == word:
