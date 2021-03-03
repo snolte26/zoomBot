@@ -107,8 +107,6 @@ def setup():
 
     classes.close()
 
-    return classes
-
 
 # `````````````````````````````````````````````````````````````````````````
 def openClass(classLists):
@@ -160,8 +158,7 @@ def main():
         classList = open("classes.txt", "r")
         openClass(classList)
     else:
-        print("neh")
-        classList = setup()
+        setup()
         print("goodbye")
 
 
