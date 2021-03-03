@@ -69,11 +69,23 @@ Also added more clarification for the setup so users kknow what the bot looks fo
 
 `````````````````````````````````````````````````````````````````````````````````````````````
 `````````````````````````````````````````````````````````````````````````````````````````````
+
+Update 03/03/2021:
+-Fixed Zoom Login
+-Added DUO fix for Zoom login
+
+Previously, the bot would try to type the username and password for the zoom login, but cursor wouldn't start typing,
+and the spaces were always filled out anyway. The bot also wouldnt go through with the Duo 2 factor authentication
+Fixed the typing issue by having the bot click the login button, then added functionality for Duo 2FA.
 Update 01/21/2021:
 -openZoom() no longer moves to preprogrammed coordinates
 
 Previously when opening zoom, the openZoom() function would go to preprogrammed coordinates.
 Now the function detirmines user screen size, calculates the desired position, and moves there.
+
+`````````````````````````````````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````````````````````````
+
 
 
 
