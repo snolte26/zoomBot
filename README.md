@@ -1,7 +1,8 @@
 # zoomBot
 A bot in the making to join my zoom classes
 
-For your own use, download the zoomBotAdvanced.py
+For your own use, download the zoomBotAdvanced.py.
+
 Day of week must be full name i.e. Monday, Tuesday...
 Start Time must be in 24 hour clockk i.e. 17:30
 
